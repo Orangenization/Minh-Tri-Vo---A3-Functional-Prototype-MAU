@@ -1,0 +1,13 @@
+ #SystemText {
+            margin: 20px;
+            font-size: 18px;
+        }
+        #userText {
+            margin: 20px;
+            font-size: 18px;
+        }
+        #CheckerButton {
+            padding: 10px 20px;
+            margin: 20px;
+            cursor: pointer;
+        }
