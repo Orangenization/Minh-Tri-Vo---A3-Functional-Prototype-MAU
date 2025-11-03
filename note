@@ -1,0 +1,9 @@
+Change text to block with color
+Make array inside array (Block could change shape and array of color could apply to them)
+
+
+//
+Make 6 rows of randomly premade shape and color that you can choose from to add in userBox
+Make a swipe gesture that will clear and regenerate a new set of randomly premade shape and color
+
+
