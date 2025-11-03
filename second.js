@@ -174,6 +174,10 @@ document.getElementById("CheckerButton").addEventListener("pointerdown", functio
         systemBox();
         items = [];
         score++;
+        if (score > 50){
+        alert("You win!");
+        window.location.reload();
+        }
         updateDisplay();
     } else {
         alert("Wrong");
@@ -181,14 +185,11 @@ document.getElementById("CheckerButton").addEventListener("pointerdown", functio
         items = [];
         score--;
         hiddenScore--;
-        if (score < 1) {
+        if (score < 0) {
             alert("You lose!");
             window.location.reload();
         }
-        if (score > 50){
-            alert("You win!");
-            window.location.reload();
-        }
+
         if (hiddenScore < -5) {
             window.open("https://www.youtube.com/watch?v=lfmg-EJ8gm4");
             hiddenScore = 0;
