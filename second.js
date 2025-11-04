@@ -89,7 +89,8 @@ document.addEventListener("keydown", function (event) {
             slideKeyIndex = 0;
         }
 
-    } else if (key === slideKeys[0]) { // reset the Index back to 1 if mistakenly press something else, then press Z will reset the whole thing and start running again
+        // This will run when z is pressed, since now - slideTime will be absolutely more than 200ms, it will reset the index back to 1, which is "x". 
+    } else if (key === slideKeys[0]) { // reset the Index back to 1 if mistakenly press something else, then press Z will reset the whole thing and start running again.
         slideKeyIndex = 1;
         slideTime = now;
     } else {
